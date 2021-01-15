@@ -90,14 +90,13 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <c:forEach var="product" items="${productList}"><jsp:useBean id="category" scope="request" type="com.sun.corba.se.impl.ior.GenericIdentifiable"/>
-                        
+                        <c:forEach var="product" items="${productList}">
                             <tr>
                                 <td>
                                     <c:out value="${product.id}"/>
                                 </td>
                                 <td>
-                                    <c:out value="${product.categoryName}"/>
+                                    <c:out value="${product.productName}"/>
                                 </td>
                                 <td>
                                     <c:out value="${product.productPrice}"/>
